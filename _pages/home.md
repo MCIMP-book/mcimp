@@ -2,9 +2,9 @@
 layout: splash
 permalink: /
 hidden: false
-header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/front-banner.jpg
+# header:
+#   overlay_color: "#5e616c"
+#   overlay_image: /assets/images/front-banner.jpg
   # actions:
   #   - label: "<i class='fas fa-download'></i> Purchase Book"
   #     url: "https://github.com/MCIMP-book/mcimp"
