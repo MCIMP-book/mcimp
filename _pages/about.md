@@ -2,6 +2,13 @@
 permalink: /about/
 title: "About"
 author_profile: false
+feature_row:
+  - image_path: /assets/images/XuChen.JPG
+    alt: "Chen"
+    title: "Xu Chen"
+  - image_path: /assets/images/Tomizuka-Masayoshi.jpg
+    alt: "Tomizuka"
+    title: ""Masayoshi Tomizuka
 ---
 
 {% include figure image_path="/assets/images/frontcover.png" alt="frontbanner" caption="" %}
@@ -10,7 +17,9 @@ author_profile: false
 
 # About the Authors
 
-{% include figure image_path="/assets/images/XuChen.JPG" alt="frontbanner" caption="" %}
+{% include feature_row %}
+
+<!-- {% include figure image_path="/assets/images/XuChen.JPG" alt="frontbanner" caption="" %} -->
 
 *Xu Chen* is an Associate Professor and holds the Bryan T. McMinn Endowed Research Professorship of Mechanical Engineering at the University of Washington, Seattle. He obtained his Ph.D. degree in mechanical engineering from the University of California, Berkeley in 2013, and his bachelor’s degree in mechanical engineering from Tsinghua University, China in 2008. He researches into dynamic systems, controls, and information processing, to better understand and engineer smart manufacturing that can positively impact our lives. Xu Chen’s work has led to Best Paper Awards, servo algorithms in mass production in the information storage industry, and top-tier adaptive control methods in international benchmark evaluations. He is a recipient of the U.S. National Science Foundation CAREER Award, the SME Sandra L. Bouckley Outstanding Young Manufacturing Engineer Award, the Mechatronic Systems Outstanding Young Researcher Award from the International Federation of Automatic Control (IFAC) Technical Committee on Mechatronic Systems, the Young Investigator Award from ISCIE / ASME International Symposium on Flexible Automation, and the inaugural UTC Institute for Advanced Systems Engineering Breakthrough Award. At the University of Washington, he currently serves as the Director of the Boeing Advanced Research and Collaboration Center.
 

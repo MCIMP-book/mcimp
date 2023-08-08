@@ -22,6 +22,8 @@ github_username:
 minimal_mistakes_skin: neon
 search: true
 
+logo: "/assets/images/logo.png"
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
