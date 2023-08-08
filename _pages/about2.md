@@ -39,5 +39,5 @@ gallery:
     alt: "modeling"
     title: "modeling"
 ---
-{% raw %}{% include gallery caption="" %}{% endraw %}
-{% include gallery layout='half' %}
+<!-- {% raw %}{% include gallery caption="" %}{% endraw %} -->
+{% include gallery layout="half" %}
