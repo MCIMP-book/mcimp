@@ -7,5 +7,7 @@ main:
   #   url: /tags/
   - title: "Gallery"
     url: /gallery/
+  - title: "Gallery2"
+    url: /picshow/
   - title: "About"
     url: /about/

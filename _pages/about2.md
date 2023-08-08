@@ -1,5 +1,5 @@
 ---
-permalink: /gallery/
+permalink: /picshow/
 title: "Gallery"
 author_profile: false
 gallery:
