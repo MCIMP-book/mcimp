@@ -4,10 +4,13 @@ permalink: /
 hidden: false
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_image: /assets/images/front-banner.jpg
   actions:
     - label: "<i class='fas fa-download'></i> Purchase Book"
       url: "https://github.com/MCIMP-book/mcimp"
+    - label: "<i class='fas fa-download'></i> First 2 Chapters"
+      url: "/assets/contents_and_first_2_chapters.pdf"
+
 excerpt: >
   A modern introduction to modern control systems, with illustrations in MATLAB and Python. Over one thousand lines of codes illustrating how to use state-space methods to make, study, and control dynamic systems.<br />
 feature_row:
