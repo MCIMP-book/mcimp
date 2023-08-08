@@ -1,5 +1,6 @@
 ---
 title: "Post: Quote"
+search: false
 categories:
   - Blog
 tags:
