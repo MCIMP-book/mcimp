@@ -6,7 +6,7 @@ layout: splash
 author_profile: false
 ---
 
-{% include figure image_path="/assets/images/frontcover.png" alt="frontbanner" caption="" %}
+<!-- {% include figure image_path="/assets/images/frontcover.png" alt="frontbanner" caption="" %} -->
 
 "Introduction to Modern Controls“ uses modern computing tools such as MATLAB and Python to teach modern control systems. You will learn how to use state-space methods to make, study, and control dynamic systems. You will explore topics like state-space models and solutions, stability, controllability, observability, state-feedback control, optimal control, observers, observer state feedback controls, least square estimation, Kalman filter, and Linear Quadratic Gaussian optimal control. You will see how these topics work in both continuous- and discrete-time settings. Substantial example codes, figures, and illustrations on physical systems supplement your learning.
 
