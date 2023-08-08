@@ -3,14 +3,17 @@ title: "Gallery"
 layout: single
 permalink: /gallery/
 hidden: false
-classes: wide
+# classes: wide
+layout: splash
+author_profile: false
 date: 2022-07-23T11:48:41-04:00
 gallery:
-  - image_path: /assets/images/dtlq.png
-    alt: "dtlq"
-    title: "discrete-time LQ"
-  - image_path: /assets/images/lq.png
-    title: "LQ"
+  - image_path: /assets/images/frontcover.png
+    alt: "fc"
+    title: "front cover"
+  - image_path: /assets/images/backcover.png
+    alt: "bc"
+    title: "back cover"
   - image_path: /assets/images/sf.png
     alt: "sf"
     title: "state feedback"
@@ -23,9 +26,6 @@ gallery:
   - image_path: /assets/images/discretization.png
     alt: "dtize"
     title: "discretization"
-  - image_path: /assets/images/expA.png
-    alt: "expA"
-    title: "state transition matrix"
   - image_path: /assets/images/ss-sol.png
     alt: "sssol"
     title: "state-space solution"
@@ -35,6 +35,14 @@ gallery:
   - image_path: /assets/images/afm.png
     alt: "afmA"
     title: "examples"
+  - image_path: /assets/images/dtlq.png
+    alt: "dtlq"
+    title: "discrete-time LQ"
+  - image_path: /assets/images/lq.png
+    title: "LQ"
+  - image_path: /assets/images/expA.png
+    alt: "expA"
+    title: "state transition matrix"
   - image_path: /assets/images/modeling.png
     alt: "modeling"
     title: "modeling"

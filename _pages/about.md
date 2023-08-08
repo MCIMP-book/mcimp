@@ -1,8 +1,9 @@
 ---
 permalink: /about/
 title: "About"
+# classes: wide
+layout: splash
 author_profile: false
-classes: wide
 ---
 
 {% include figure image_path="/assets/images/frontcover.png" alt="frontbanner" caption="" %}
