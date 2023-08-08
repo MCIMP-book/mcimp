@@ -3,7 +3,7 @@ permalink: /picshow/
 title: "Gallery"
 author_profile: false
 gallery:
-  - image_path: assets/images/page-show.png
+  - image_path: /assets/images/page-show.png
     alt: "page show"
     title: "page show"
   - image_path: /assets/images/dtlq.png
@@ -40,3 +40,4 @@ gallery:
     title: "modeling"
 ---
 {% raw %}{% include gallery caption="" %}{% endraw %}
+{% include gallery layout='half' %}
