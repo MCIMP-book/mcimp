@@ -5,9 +5,6 @@ permalink: /gallery/
 hidden: false
 date: 2022-07-23T11:48:41-04:00
 gallery:
-  - image_path: assets/images/page-show.png
-    alt: "page show"
-    title: "page show"
   - image_path: /assets/images/dtlq.png
     alt: "dtlq"
     title: "discrete-time LQ"
@@ -40,8 +37,11 @@ gallery:
   - image_path: /assets/images/modeling.png
     alt: "modeling"
     title: "modeling"
+  - image_path: /assets/images/page-show.png
+    alt: "page show"
+    title: "page show"
 ---
-{% raw %}{% include gallery caption="" %}{% endraw %}
+{% include gallery layout="half" %}
 
 <!-- {% include feature_row id="intro" type="center" %}
 
