@@ -1,27 +1,14 @@
-# Minimal Mistakes remote theme starter
+# Introduction to Modern Controls, with Illustrations in Matlab and Python
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+![](assets/images/frontcover.png)
 
-Contains basic configuration to get you a site with:
-
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
-
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+"Introduction to Modern Controls“ uses modern computing tools such as MATLAB and Python to teach modern control systems. You will learn how to use state-space methods to make, study, and control dynamic systems. You will explore topics like state-space models and solutions, stability, controllability, observability, state-feedback control, optimal control, observers, observer state feedback controls, least square estimation, Kalman filter, and Linear Quadratic Gaussian optimal control. You will see how these topics work in both continuous- and discrete-time settings. Substantial example codes, figures, and illustrations on physical systems supplement your learning.
 
 ---
 
-## Troubleshooting
+## Links
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
-
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+- [Book website](https://mcimp-book.github.io/mcimp/)
+- [ME547 Linear Systems, University of Washington¶](https://faculty.washington.edu/chx/teaching/me547/)
+- [ME233 Advanced Control Systems II, UC Berkeley, Spring 2014¶](https://faculty.washington.edu/chx/teaching/advcontrol2/)
+- [ME233 Advanced Control Systems II, UC Berkeley, Spring 2016¶](https://berkeley-me233.github.io)
