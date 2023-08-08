@@ -92,9 +92,9 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: true
+      author_profile: false
+      read_time: false
+      comments: flase
       share: true
       related: true
   # _pages
@@ -104,6 +104,12 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _foo
+  - scope:
+      path: ""
+      type: foo
+    values:
+      layout: single
 
 category_archive:
   type: liquid
