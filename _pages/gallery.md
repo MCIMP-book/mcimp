@@ -3,6 +3,7 @@ title: "Gallery"
 layout: single
 permalink: /gallery/
 hidden: false
+classes: wide
 date: 2022-07-23T11:48:41-04:00
 gallery:
   - image_path: /assets/images/dtlq.png

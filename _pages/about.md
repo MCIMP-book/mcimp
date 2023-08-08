@@ -2,6 +2,7 @@
 permalink: /about/
 title: "About"
 author_profile: false
+classes: wide
 ---
 
 {% include figure image_path="/assets/images/frontcover.png" alt="frontbanner" caption="" %}
