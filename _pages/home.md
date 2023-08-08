@@ -44,6 +44,8 @@ feature_row:
     btn_label: "Learn more"      
 ---
 
+![](/assets/images/front-banner.jpg)
+
 {% include feature_row %}
 
 <!-- to include more rows: -->
