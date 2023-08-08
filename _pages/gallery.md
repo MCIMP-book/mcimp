@@ -8,18 +8,11 @@ gallery:
   - image_path: assets/images/page-show.png
     alt: "page show"
     title: "page show"
-    <!-- excerpt: "This is some sample content that goes here with **Markdown** formatting." -->
   - image_path: /assets/images/dtlq.png
-    <!-- image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)" -->
     alt: "dtlq"
     title: "discrete-time LQ"
-    <!-- excerpt: "This is some sample content that goes here with **Markdown** formatting." -->
-    <!-- url: "#test-link" -->
-    <!-- btn_label: "Read More" -->
-    <!-- btn_class: "btn--primary" -->
   - image_path: /assets/images/lq.png
     title: "LQ"
-    <!-- excerpt: "This is some sample content that goes here with **Markdown** formatting." -->
   - image_path: /assets/images/sf.png
     alt: "sf"
     title: "state feedback"
@@ -29,10 +22,6 @@ gallery:
   - image_path: /assets/images/stability.png
     alt: "stab"
     title: "stability"
-    <!-- excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left  -->aligned with `type="left"`'
-    <!-- url: "#test-link" -->
-    <!-- btn_label: "Read More" -->
-    <!-- btn_class: "btn--primary" -->
   - image_path: /assets/images/discretization.png
     alt: "dtize"
     title: "discretization"
