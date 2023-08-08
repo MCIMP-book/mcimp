@@ -2,6 +2,7 @@
 title: "Gallery"
 layout: single
 permalink: /gallery/
+hidden: false
 date: 2022-07-23T11:48:41-04:00
 <!-- header: -->
 <!--   overlay_color: "#000" -->
