@@ -44,7 +44,7 @@ feature_row:
     btn_label: "Learn more"      
 ---
 
-![](/assets/images/front-banner.jpg)
+{% include figure image_path="/assets/images/front-banner.jpg" alt="frontbanner" caption="" %}
 
 {% include feature_row %}
 
