@@ -19,7 +19,7 @@ header:
     - label: "<i class='fas fa-download'></i> First 2 Chapters"
       url: "/assets/contents_and_first_2_chapters.pdf"
 excerpt: >
-  A modern introduction to modern control systems, with illustrations in MATLAB and Python. Over one thousand lines of codes illustrating how to use state-space methods to make, study, and control dynamic systems.<br />
+  A modern introduction to modern control systems, with over one thousand lines of codes and example illustrations in MATLAB and Python. Exploit how to use state-space methods to make, study, and control dynamic systems.<br />
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png
     alt: "codes"
