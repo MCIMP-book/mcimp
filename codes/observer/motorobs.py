@@ -17,22 +17,31 @@ print(np.linalg.eig(A))
 # Observer design
 # check observability
 O = np.linalg.matrix_rank(np.concatenate(
-    (C, np.dot(C, A), np.dot(C, np.dot(A, A))), axis=0))
+    (C, C@A, C@(A@A)), axis=0))
+print(O)
+# or you can use np.block
+O = np.linalg.matrix_rank(np.block([ [C], [C@A], [C@(A@A)] ]))
 print(O)
 
 pole_des = np.array([-500+250j, -500-250j, -1000])
 
 # design observer by placing poles of A-LC
 L = ct.place(A.T, C.T, pole_des).T
-est_poles = np.linalg.eig(A - np.dot(L, C))
+est_poles = np.linalg.eig(A - L@C)
 
 # Simulation
-Aaug = np.concatenate((A, np.zeros((3, 3))), axis=1)
-Aaug = np.concatenate((Aaug, np.concatenate(
-    (np.dot(L, C), A - np.dot(L, C)), axis=1)), axis=0)
-Baug = np.concatenate((B, B), axis=0)
-Caug = np.concatenate((C, np.zeros((1, 3))), axis=1)
+Aaug = np.block([A, np.zeros((3, 3))])
+Aaug = np.block([ [Aaug], [np.block([L@C, A - L@C])] ])
+Baug = np.block([[B], [B]])
+Caug = np.block([C, np.zeros((1, 3))])
 Daug = np.array([0])
+# Aaug = np.concatenate((A, np.zeros((3, 3))), axis=1)
+# Aaug = np.concatenate((Aaug, np.concatenate(
+#     (L@C, A - L@C), axis=1)), axis=0)
+# Baug = np.concatenate((B, B), axis=0)
+# Caug = np.concatenate((C, np.zeros((1, 3))), axis=1)
+# Daug = np.array([0])
+
 
 sys = ct.ss(Aaug, Baug, Caug, Daug)
 
