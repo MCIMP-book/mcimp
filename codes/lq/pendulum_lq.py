@@ -200,7 +200,7 @@ EigA = np.linalg.eigvals(A)
 print('The eigenvalues of the plant "A" matrix are: ', EigA)
 
 # Calculate eigenvalues of the linearized system under LQ
-EigCL = np.linalg.eigvals(A-np.dot(B, K))
+EigCL = np.linalg.eigvals(A-B@K)
 print('The eigenvalues of the LQ system are: ', EigCL)
 
 poles = np.array([-120, -122, -124, -126])
@@ -208,7 +208,7 @@ poles = np.array([-120, -122, -124, -126])
 L = co.place(A.T, C.T, poles).T
 print('The observer gain matrix is: ', L)
 # Check observer poles
-est_poles = np.linalg.eigvals(A - np.dot(L, C))
+est_poles = np.linalg.eigvals(A - L@C)
 print('Placed observer eigenvalues: ', est_poles)
 
 # Simulation
@@ -230,6 +230,7 @@ X0 = np.array([x0, xhat0]).reshape((8, 1))
 
 # Define simulink parameters
 T_final = 15
+Ts = 0.0001
 t = np.arange(0, T_final, Ts)
 
 # We focus just on state estimation and set the input zero first
@@ -288,6 +289,7 @@ X0 = np.array([x0, xhat0]).reshape((8, 1))
 
 # Define simulink parameters
 T_final = 15
+Ts = 0.0001
 t = np.arange(0, T_final, Ts)
 
 # This time, let us even add some non-zero inputs
