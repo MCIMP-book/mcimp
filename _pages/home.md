@@ -5,17 +5,19 @@ hidden: false
 # header:
 #   overlay_color: "#5e616c"
 #   overlay_image: /assets/images/front-banner.jpg
-  # actions:
-  #   - label: "<i class='fas fa-download'></i> Purchase Book"
-  #     url: "https://github.com/MCIMP-book/mcimp"
-  #   - label: "<i class='fas fa-download'></i> First 2 Chapters"
-  #     url: "/assets/contents_and_first_2_chapters.pdf"
+# actions:
+#   - label: "<i class='fas fa-download'></i> Purchase Book"
+#     url: "https://github.com/MCIMP-book/mcimp"
+#   - label: "<i class='fas fa-download'></i> First 2 Chapters"
+#     url: "/assets/contents_and_first_2_chapters.pdf"
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/front-banner-star.jpg
   actions:
-    - label: "<i class='fas fa-download'></i> Purchase eBook"
+    - label: "<i class='fas fa-download'></i> eBook"
       url: "https://www.lulu.com/shop/masayoshi-tomizuka-and-xu-chen/introduction-to-modern-controls/ebook/product-je55nvg.html?page=1&pageSize=4"
+    - label: "<i class='fas fa-download'></i> Hardcopy"
+      url: "https://www.amazon.com/dp/B0CP3F93RW?ref_=pe_93986420_774957520"
     - label: "<i class='fas fa-download'></i> First 2 Chapters"
       url: "/assets/intro2modernControl_first_2chaps.pdf"
 excerpt: >
@@ -41,7 +43,7 @@ feature_row:
     excerpt: "from probability review to linear quadratic Gaussian control (UC Berkeley ME 233 Sp 14)"
     url: "https://faculty.washington.edu/chx/teaching/advcontrol2/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"      
+    btn_label: "Learn more"
 ---
 
 {% include figure image_path="/assets/images/front-banner.jpg" alt="frontbanner" caption="" %}
