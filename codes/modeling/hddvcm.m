@@ -19,7 +19,6 @@ end
 f=logspace(1,log10(60e3),3000);
 Fr_Pc_vcm_c1=squeeze(freqresp(Sys_Pc_vcm_c1,f*2*pi)).';
 
-%% figure
 figure
 subplot(211)
 semilogx(f,20*log10(abs(Fr_Pc_vcm_c1)))

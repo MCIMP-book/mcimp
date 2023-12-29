@@ -29,7 +29,6 @@ w = f * 2 * np.pi
 magPc_vcm, phase_Pc_vcm, omega_Pc_vcm = ct.freqresp(
     Sys_Pc_vcm_c1, w)  # Get the frequency response
 
-# figure
 plt.figure()
 plt.subplot(211)
 plt.semilogx(f, 20*np.log10(magPc_vcm))
