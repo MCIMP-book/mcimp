@@ -9,6 +9,7 @@
 ## Links
 
 - [Book website](https://mcimp-book.github.io/mcimp/)
+- [Installing Python](/_pages/how-to-install-python)
 - [ME547 Linear Systems, University of Washington¶](https://faculty.washington.edu/chx/teaching/me547/)
 - [ME233 Advanced Control Systems II, UC Berkeley, Spring 2014¶](https://faculty.washington.edu/chx/teaching/advcontrol2/)
 - [ME233 Advanced Control Systems II, UC Berkeley, Spring 2016¶](https://berkeley-me233.github.io)
