@@ -15,9 +15,9 @@ Muc = null_space(P.transpose())
 M = np.column_stack((Mc,Muc))
 print('M: ')
 print(M)
-tildeA = np.dot(np.dot(np.linalg.inv(M),A),M)
+tildeA = (np.linalg.inv(M)@A)@M
 print('tilde A:')
 print(tildeA)
-tildeB = np.dot(np.linalg.inv(M),B)
+tildeB = np.linalg.inv(M)@B
 print('tilde B:')
 print(tildeB)

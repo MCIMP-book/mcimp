@@ -40,7 +40,7 @@ def statespace(y, t):
     We need to calculate the input u to the states and therefore need to convert the vectors to the same data type
     before proceeding"""
 
-    y_mat = np.matrix([[y[0]], [y[1]], [y[2]], [y[3]]])
+    y_mat = np.block([[y[0]], [y[1]], [y[2]], [y[3]]])
 
     inp = -Kf*(y_mat-yd_mat)
     # We cannot directly use inp to multiply in the equations and need to extract it from the 1x1 inp matrix
@@ -62,11 +62,11 @@ def statespace(y, t):
 A = np.array([[0, 1, 0, 0], [0, -d/M, -m*g/M, 0],
              [0, 0, 0, 1], [0, -d/(M+L), -(m+M)*g/(M+L), 0]])
 B = np.array([[0], [1/M], [0], [1/(M*L)]])
-C = np.array([1, 0, 0, 0],[0, 0, 1, 0])
+C = np.array([[1, 0, 0, 0],[0, 0, 1, 0]])
 D = np.array([[0], [0]])
 
 # Q and R for LQR
-Q = np.matrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 10, 0], [0, 0, 0, 100]])
+Q = np.block([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 10, 0], [0, 0, 0, 100]])
 R = 0.0001
 
 # Calculating state-feedback gain matrix
@@ -78,7 +78,7 @@ Kf = np.array([K[0, 0], K[0, 1], K[0, 2], K[0, 3]])
 # Initial Conditions
 y0 = np.array([0, 0, np.pi+0.2, 0])
 yd = np.array([0, 0, np.pi, 0])     # Desired Postions
-yd_mat = np.matrix([[yd[0]], [yd[1]], [yd[2]], [yd[3]]]
+yd_mat = np.block([[yd[0]], [yd[1]], [yd[2]], [yd[3]]]
                    )    # making it a 4x1 Matrix
 
 # Creating time vector
@@ -152,6 +152,7 @@ X0 = x0
 
 # define simulink parameters
 T_final = 15
+Ts = 0.0001
 t = np.arange(0, T_final, Ts)
 
 v = 0 * np.ones(np.shape(t))
@@ -199,7 +200,7 @@ EigA = np.linalg.eigvals(A)
 print('The eigenvalues of the plant "A" matrix are: ', EigA)
 
 # Calculate eigenvalues of the linearized system under LQ
-EigCL = np.linalg.eigvals(A-np.dot(B, K))
+EigCL = np.linalg.eigvals(A-B@K)
 print('The eigenvalues of the LQ system are: ', EigCL)
 
 poles = np.array([-120, -122, -124, -126])
@@ -207,14 +208,16 @@ poles = np.array([-120, -122, -124, -126])
 L = co.place(A.T, C.T, poles).T
 print('The observer gain matrix is: ', L)
 # Check observer poles
-est_poles = np.linalg.eigvals(A - np.dot(L, C))
+est_poles = np.linalg.eigvals(A - L@C)
 print('Placed observer eigenvalues: ', est_poles)
 
 # Simulation
 # Define augmented system to run the simulation
 Aaug = np.block([[A, np.zeros((4, 4))], [L @ C, A - L @ C]])
-Baug = np.concatenate((B, B), axis=0)
-Caug = np.concatenate((C, np.zeros((2, 4))), axis=1)
+# Baug = np.concatenate((B, B), axis=0)
+Baug = np.block([[B],[B]])
+# Caug = np.concatenate((C, np.zeros((2, 4))), axis=1)
+Caug = np.block([C,np.zeros((2, 4))])
 Daug = np.array([[0], [0]])
 
 sysobs = co.ss(Aaug, Baug, Caug, Daug)
@@ -227,6 +230,7 @@ X0 = np.array([x0, xhat0]).reshape((8, 1))
 
 # Define simulink parameters
 T_final = 15
+Ts = 0.0001
 t = np.arange(0, T_final, Ts)
 
 # We focus just on state estimation and set the input zero first
@@ -270,8 +274,10 @@ plt.show()
 
 # Define augmented system to run the simulation
 Acl = np.block([[A, -B @ K], [L @ C, A - L @ C - B @ K]])
-Bcl = np.concatenate((B, B), axis=0)
-Ccl = np.concatenate((C, np.zeros((2, 4))), axis=1)
+# Bcl = np.concatenate((B, B), axis=0)
+Bcl = np.block([[B],[B]])
+# Ccl = np.concatenate((C, np.zeros((2, 4))), axis=1)
+Ccl = np.block([C,np.zeros((2, 4))])
 Dcl = np.array([[0], [0]])
 
 syscl = co.ss(Acl, Bcl, Ccl, Dcl)
@@ -283,6 +289,7 @@ X0 = np.array([x0, xhat0]).reshape((8, 1))
 
 # Define simulink parameters
 T_final = 15
+Ts = 0.0001
 t = np.arange(0, T_final, Ts)
 
 # This time, let us even add some non-zero inputs

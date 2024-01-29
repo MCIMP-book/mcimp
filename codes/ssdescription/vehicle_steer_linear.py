@@ -52,6 +52,7 @@ for ii in range(len(Ugain)):
     # Simulate the linearized system
     x0 = [0, 0]
     Ylinear[:, ii], _, _ = ct.lsim(ct.ss(A, B, C, D), u, t, x0)
+    # or use ct.forced_response from plain control instead of control.matlab
 
 # Plot the results
 plt.figure()
@@ -98,3 +99,4 @@ for ii in range(len(FreqVect)):
     # Simulate the linearized system
     x0 = [0, 0]
     Ylinear[:, ii], _, _ = ct.lsim(ct.ss(A, B, C, D), u, t, x0)
+    # exercise: use control.forced_response instead to obtain the equivalent result

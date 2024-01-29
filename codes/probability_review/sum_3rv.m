@@ -5,4 +5,4 @@ Z = X1 + X2 + X3;
 w_fz = x(end)/length(fz);
 fz = fz/sum(fz)/w_fz;
 figure, bar(x,fz)
-xlabel 'x'; ylabel 'p_Z(x))';
+xlabel 'x'; ylabel 'p_Z(x)';

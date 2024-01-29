@@ -139,7 +139,6 @@ Fr_Pc_pzt_all=squeeze(freqresp(Sys_Pc_pzt_all,f*2*pi)).';
 Fr_Pd_vcm_all=squeeze(freqresp(Sys_Pd_vcm_all,f*2*pi)).';
 Fr_Pd_pzt_all=squeeze(freqresp(Sys_Pd_pzt_all,f*2*pi)).';
 
-%% figure
 figure
 subplot(211)
 semilogx(f,20*log10(abs(Fr_Pc_vcm_all(:,1:7))))
