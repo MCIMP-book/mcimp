@@ -6,4 +6,4 @@ Q = np.identity(2)
 P = ct.lyap(A.transpose(),Q)
 print(P)
 w = np.linalg.eigvals(P)# compute eigenvalues of P
-print(w)
+print(f'eigenvalues of P: {w}')
