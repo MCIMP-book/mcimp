@@ -49,7 +49,6 @@ feature_row:
 feature_row2: 
   - title: "Comments from Users"
     excerpt: Guoxiao Guo, Director of System Design at Western Digital Corp and coauthor of "Hard disk drive: mechatronics and control": "Introduction to Modern Controls with Illustrations in MATLAB and Python" is a well-rounded textbook that expertly combines theoretical depth with practical application. Its clear explanations, extensive examples, and practical exercises make it an invaluable resource for mastering modern control systems. The practical methodologies and tools provided have equipped many engineers with the skills necessary to innovate and excel in this field. The practical relevance of the book is further enhanced by its use of real-world examples. For instance, the inclusion of applications such as atomic force microscopy and hard disk drive (HDD) information storage systems not only illustrates the principles discussed but also highlights their practical significance. The authors’ experience in academia and industry is evident, particularly in how the book addresses the needs of both students and practicing engineers. The impact of the training offered by this framework is evident in the remarkable contributions of its (and its previous versions) readers to industries such as HDD manufacturing. I highly recommend this book for its educational value and practical utility.
-
 ---
 
 
