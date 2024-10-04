@@ -46,7 +46,7 @@ feature_row:
     url: "https://faculty.washington.edu/chx/teaching/advcontrol2/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-feature_row2: 
+header_row2: 
   - image_path: /assets/images/ample-examples.gif
     alt: ""
     title: "Learn from simulating foundational examples and practical use cases"
@@ -63,9 +63,11 @@ feature_row3:
 
 {% include feature_row %}
 
-{% include feature_row id="feature_row2" type="center" %}
+{% include figure image_path="/assets/images/ample-examples.gif" alt="examples" caption="" %}
+
 {% include feature_row id="feature_row3" type="left" %}
 
+<!-- {% include feature_row id="feature_row2" type="center" %} -->
 <!-- to include more rows: -->
 <!-- {% include feature_row id="feature_row2" type="left" %}
 
