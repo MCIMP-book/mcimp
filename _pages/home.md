@@ -47,6 +47,11 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
 feature_row2: 
+  - image_path: /assets/images/ample-examples.gif
+    alt: ""
+    title: "Learn from Examples"
+    excerpt: ''
+feature_row3: 
   - image_path: /assets/images/comments.jpg
     alt: "Comments"
     title: "Comments from Users"
@@ -58,6 +63,7 @@ feature_row2:
 
 {% include feature_row %}
 
+{% include feature_row id="feature_row2" type="center" %}
 {% include feature_row id="feature_row2" type="left" %}
 
 <!-- to include more rows: -->
