@@ -39,7 +39,7 @@ feature_row:
     url: "https://faculty.washington.edu/chx/teaching/me547/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/droplet.jpg
+  - image_path: /assets/images/me233.png
     alt: "ME233"
     title: "Free Lecture Material II"
     excerpt: "from probability review to linear quadratic Gaussian control (UC Berkeley ME 233 Sp 14)"
