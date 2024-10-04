@@ -63,7 +63,7 @@ feature_row3:
 
 {% include feature_row %}
 
-{% include figure image_path="/assets/images/ample-examples.gif" alt="examples" caption="" %}
+{% include figure image_path="/assets/images/ample-examples.gif" alt="examples" caption="Learn from simulating foundational examples and practical use cases" %}
 
 {% include feature_row id="feature_row3" type="left" %}
 
