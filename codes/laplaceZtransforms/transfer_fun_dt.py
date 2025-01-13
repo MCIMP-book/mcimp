@@ -1,5 +1,5 @@
 # laplaceZtransforms/transfer_fun_dt.py
-import control as co
+import control as ct
 import matplotlib.pyplot as plt
 import numpy as np
 Ts = 0.1 # sampling time
@@ -7,14 +7,14 @@ Ts = 0.1 # sampling time
 num = [0.09952, -0.08144] # Numerator co-efficients
 den = [1, -1.792, 0.8187] # Denominator co-efficients
 
-sys_tf = co.tf(num,den, Ts)
+sys_tf = ct.tf(num,den, Ts)
 print(sys_tf)
 
-poles = co.pole(sys_tf)
-zeros = co.zero(sys_tf)
+poles = ct.pole(sys_tf)
+zeros = ct.zero(sys_tf)
 print('\nSystem Poles = ', poles, '\nSystem Zeros = ', zeros)
 
-T,yout = co.step_response(sys_tf)
+T,yout = ct.step_response(sys_tf)
 
 # Plot the response
 plt.figure(1,figsize = (6,4))
@@ -29,7 +29,7 @@ plt.ylabel("y")
 plt.xlabel("Time (sec)")
 plt.show()
 
-T,yout_i = co.impulse_response(sys_tf)
+T,yout_i = ct.impulse_response(sys_tf)
 
 # Plot the response
 plt.figure(1,figsize = (6,4))
@@ -43,8 +43,8 @@ plt.show()
 u1 = np.full((1,len(T)),2) #Create an array of 2's, equal to 2*step
 u2 = np.sin(T)
 
-T,yout_u1 = co.forced_response(sys_tf,T,u1) # Response to input 1
-T,yout_u2 = co.forced_response(sys_tf,T,u2) # Response to input 2
+T,yout_u1 = ct.forced_response(sys_tf,T,u1) # Response to input 1
+T,yout_u2 = ct.forced_response(sys_tf,T,u2) # Response to input 2
 
 plt.figure(2,figsize = (6,4))
 

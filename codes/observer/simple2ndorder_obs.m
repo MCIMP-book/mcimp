@@ -1,5 +1,4 @@
 % observer/simple2ndorder_obs.m
-% plant model
 A = [0 1;-4 -0.2];
 B = [0 1]';
 C = [1 0];
