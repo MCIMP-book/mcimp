@@ -11,8 +11,8 @@ sys_tf = ct.tf(num,den)
 print(sys_tf)
 
 # Poles and zeros
-poles = ct.pole(sys_tf)
-zeros = ct.zero(sys_tf)
+poles = ct.poles(sys_tf)
+zeros = ct.zeros(sys_tf)
 print('\nSystem Poles = ', poles, '\nSystem Zeros = ', zeros)
 
 T,yout = ct.step_response(sys_tf)

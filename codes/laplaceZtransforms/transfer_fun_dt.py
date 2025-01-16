@@ -10,8 +10,8 @@ den = [1, -1.792, 0.8187] # Denominator co-efficients
 sys_tf = ct.tf(num,den, Ts)
 print(sys_tf)
 
-poles = ct.pole(sys_tf)
-zeros = ct.zero(sys_tf)
+poles = ct.poles(sys_tf)
+zeros = ct.zeros(sys_tf)
 print('\nSystem Poles = ', poles, '\nSystem Zeros = ', zeros)
 
 T,yout = ct.step_response(sys_tf)

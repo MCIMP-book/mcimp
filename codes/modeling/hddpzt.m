@@ -26,5 +26,3 @@ title('P_{cp}');xlabel('Frequency [Hz]');ylabel('Gain [dB]');grid;axis([1e3 f(en
 subplot(212)
 semilogx(f,angle(Fr_Pc_pzt_c1)*180/pi)
 xlabel('Frequency [Hz]');ylabel('Phase [deg.]');grid;axis([1e3 f(end) -180 180]);yticks(-180:90:180)
-% saveas(gcf,'images/hdd_pcpzt_baseline.png')
-% saveas(gcf,'images/hdd_pcpzt_baseline.pdf')
