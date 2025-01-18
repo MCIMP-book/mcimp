@@ -22,6 +22,8 @@ header:
       url: "/assets/intro2modernControl_first_2chaps.pdf"
     - label: "<i class='fab fa-github'></i> Codes"
       url: "https://github.com/MCIMP-book/mcimp"
+    - label: "<i class='fa fa-cart-shopping'></i> Expansion for Instructors (Coming in 2026)"
+      url: ""
 excerpt: >
   A modern introduction to modern control systems, with over one thousand lines of codes and example illustrations in MATLAB and Python. Exploit how to use state-space methods to make, study, and control dynamic systems.<br />
 feature_row:
