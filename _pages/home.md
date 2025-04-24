@@ -53,6 +53,11 @@ header_row2:
     alt: ""
     title: "Learn from simulating foundational examples and practical use cases"
     excerpt: ''
+header_row4: 
+  - image_path: /assets/images/book-users.png
+    alt: ""
+    title: "Users of the book"
+    excerpt: ''
 feature_row3: 
   - image_path: /assets/images/comments.jpg
     alt: "Comments"
@@ -66,6 +71,8 @@ feature_row3:
 {% include feature_row %}
 
 {% include figure image_path="/assets/images/ample-examples.gif" alt="examples" caption="Learn from simulating foundational examples and practical use cases" %}
+
+{% include figure image_path="/assets/images/book-users.png" alt="users" caption="Users of the book" %}
 
 {% include feature_row id="feature_row3" type="left" %}
 
