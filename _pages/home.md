@@ -72,7 +72,7 @@ feature_row3:
 
 {% include figure image_path="/assets/images/ample-examples.gif" alt="examples" caption="Learn from simulating foundational examples and practical use cases" %}
 
-{% include figure image_path="/assets/images/book-users.png" alt="users" caption="Users of the book" %}
+{% include figure image_path="/assets/images/book-users.png" alt="users" caption="Selected users of the book" %}
 
 {% include feature_row id="feature_row3" type="left" %}
 
