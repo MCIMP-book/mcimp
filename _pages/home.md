@@ -23,7 +23,7 @@ header:
     - label: "<i class='fab fa-github'></i> Codes"
       url: "https://github.com/MCIMP-book/mcimp"
     - label: "<i class='fa fa-github'></i> Instructors' Expansion (Coming in 2026)"
-      url: ""
+      url: "https://github.com/MCIMP-book/mcimp/tree/main/lecture%20notes"
 excerpt: >
   A modern introduction to modern control systems, with over one thousand lines of codes and example illustrations in MATLAB and Python. Exploit how to use state-space methods to make, study, and control dynamic systems.<br />
 feature_row:
