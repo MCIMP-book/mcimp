@@ -30,3 +30,23 @@ From Youtube:
 - @chang-hongchen6804: Thank you professor, the lecture is so far the best control course I took. It is very intuitive and uses lots of hands-on examples. Different point of views are given in certain control concepts making me understanding the big picture of modern control theory. 
 - @el_witcher: Thanks for making these lectures available for free, Prof. Greetings from Germany! 
 - @weiguozhang17: intuitive and clear, thx!
+
+## Citation
+
+If you use this book or the accompanying code in your teaching, research, or projects, please cite:
+
+Xu Chen and Masayoshi Tomizuka, "Introduction to Modern Controls – with Illustrations in MATLAB and Python," 2023, ISBN: 9798860587496, 446 pages. https://mcimp-book.github.io/
+
+### BibTeX
+
+\`\`\`bibtex
+@book{chen2023modernControls,
+  author    = {Chen, Xu and Tomizuka, Masayoshi},
+  title     = {Introduction to Modern Controls: With Illustrations in {MATLAB} and {Python}},
+  year      = {2023},
+  isbn      = {9798860587496},
+  pages     = {446},
+  url       = {https://mcimp-book.github.io/}
+}
+\`\`\`
+```
