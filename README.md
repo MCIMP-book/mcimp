@@ -39,7 +39,7 @@ Xu Chen and Masayoshi Tomizuka, "Introduction to Modern Controls – with Illust
 
 ### BibTeX
 
-\`\`\`bibtex
+```bibtex
 @book{chen2023modernControls,
   author    = {Chen, Xu and Tomizuka, Masayoshi},
   title     = {Introduction to Modern Controls: With Illustrations in {MATLAB} and {Python}},
@@ -48,5 +48,4 @@ Xu Chen and Masayoshi Tomizuka, "Introduction to Modern Controls – with Illust
   pages     = {446},
   url       = {https://mcimp-book.github.io/}
 }
-\`\`\`
 ```
